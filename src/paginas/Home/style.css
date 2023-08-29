@@ -1,0 +1,114 @@
+.banner{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/banner-home.png');
+    background-color: rgb(255, 242, 128);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.sabores,
+.eventos,
+.sobre {
+    display: flex;
+}
+
+.sabores img,
+.eventos img,
+.sobre img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sabores-desc,
+.eventos-desc,
+.sobre-desc{
+    width: 50%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sabores h2,
+.eventos h2,
+.sobre h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.sabores span,
+.eventos span,
+.sobre span {
+    padding: 10px 0 30px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sabores-desc p,
+.eventos-desc p,
+.sobre-desc p {
+    text-align: justify;
+    width: 450px;
+}
+
+@media (max-width: 1024px){
+    .sabores-desc p,
+    .eventos-desc p,
+    .sobre-desc p{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .sabores,
+    .sobre {
+        flex-direction: column;
+    }
+    .eventos{
+        flex-direction: column-reverse;
+    }
+    .sabores img,
+    .eventos img,
+    .sobre img{
+        width: 100%;
+    }
+    .sabores-desc,
+    .eventos-desc,
+    .sobre-desc {
+        width: 100%;
+    }
+    .sabores-desc p,
+    .eventos-desc p,
+    .sobre-desc p {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .sabores h2,
+    .eventos h2,
+    .sobre h2{
+        font-size: 28px;
+}
+
+}
+
+@media (max-width: 425px) {
+    .banner {
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
